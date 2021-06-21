@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tranisition.Tranisition_Fragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <!--Action BAR-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+      <ImageView
+          android:id="@+id/backpesssicontansition"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/back_arrow" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="3.7"
+          android:text="Ledger Detail"
+          android:textColor="#fff"
+          android:textSize="20dp"
+          android:textStyle="bold"/>
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/refresh" />
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/more" />
+
+    </LinearLayout>
+
+    <!--FROM DATE & TO-DATE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tn_et_formdate"
+            android:hint="Form Date"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/calender"
+            android:padding="10dp"
+            android:clickable="false"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tn_et_todate"
+            android:hint="To Date"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/calender"
+            android:padding="10dp"
+            android:clickable="false"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"/>
+
+      </LinearLayout>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:layout_margin="1dp"
+          android:textAllCaps="false"
+          android:id="@+id/tn_form_to_btn"
+          android:background="@color/btn_bg"
+          android:textColor="@color/whitee"
+          android:textStyle="bold"
+          android:textSize="15dp"
+          android:layout_weight="0.1"/>
+
+    </LinearLayout>
+    <!--  Studio Name and Studio Code but Visibility hidden      -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tn_st_name"
+        android:text="Studio Name"
+        android:background="#E4F4D2"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tn_bal_amount"
+        android:text="Balance Amount :"
+        android:background="#B13A31"
+        android:textColor="@color/whitee"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=" Date"
+          android:textColor="@color/whitee"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Received"
+          android:textColor="@color/whitee"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bill"
+          android:textColor="@color/whitee"
+
+          android:layout_weight="1"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          />
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frg_view_detail_recy"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasition_possba"
+        android:visibility="gone"/>
+
+  </LinearLayout>
+
+</FrameLayout>

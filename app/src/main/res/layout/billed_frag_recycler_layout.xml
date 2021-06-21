@@ -1,0 +1,196 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/party_member_cardview_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/themeColor"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_billed_frag_re_lay_st_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Studio Name"
+                    android:textSize="17dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_billed_frag_re_lay_st_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Studio Code"
+                    android:visibility="gone"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:weightSum="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tv_billed_cashed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CASH"
+                            android:textSize="15sp"
+                            android:textColor="#026A06"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/billed_tv_billed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:text="BILL"
+                            android:textColor="#A82A02"
+                            android:textSize="15sp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/dip_image_bil"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+
+                            android:padding="2dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/green_up"
+                            android:visibility="gone" />
+                        <ImageView
+                            android:id="@+id/bill_image_bil"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/red_down"
+                            android:padding="2dp"
+
+                            android:layout_gravity="center"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:weightSum="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_billed__fra_re_lay_tra_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRANSACTION DATE"
+                        android:textColor="@color/textColor"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tv_billed_fra_re_lay_tra_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRANSACTION ID"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/tv_billed_fra_re_lay_amt_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAYBLE AMT"
+                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#026A06"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:visibility="visible"/>
+                    <TextView
+                        android:id="@+id/tv_billed_fra_re_lay_amt_rec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RECEIVE AMT"
+                        android:gravity="center_horizontal"
+                        android:textColor="#A82A02"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>
+

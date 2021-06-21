@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/party_member_cardview_background"
+            android:id="@+id/bal_recy_lay_liner">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:weightSum="1"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                      <ImageView
+                          android:layout_width="70dp"
+                          android:layout_height="75dp"
+                          android:src="@drawable/of"
+                          android:id="@+id/im_book_sche"
+                          android:layout_marginLeft="5dp"
+                          />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:weightSum="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule Time"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:id="@+id/tv_book_sch_schtime"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/off"
+                        android:id="@+id/im_book_scheh"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booking.."
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:id="@+id/tv_book_sch_booking"
+                        android:layout_weight="1"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

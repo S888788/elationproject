@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E4DEDE"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--back liner layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offer_main_page_activity_back"
+                android:src="@drawable/back_arrow"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_weight="0.2"
+                android:textColor="#fff"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_button_decoration"
+        android:id="@+id/scheme_activity"
+        android:text="SCHEME"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        />
+
+<!--    offer-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/offer_proper_activity"
+        android:text="OFFER"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#E44747"
+        />
+
+<!--    pHOTOBOOK PRICE-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_button_decoration"
+        android:id="@+id/offer_PHOTONOOK_PRICE"
+        android:text="PHOTO BOOK PRICE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+<!--  DESIGN PHOTO BOOK PROCE  -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_button_decoration"
+        android:id="@+id/offer_DESIGN_PRICE"
+        android:text="DESIGN PHOTO BOOK PRICE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/payment_back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:text="Studio Name"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/payment_st_name"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Voucher Date"
+                        android:layout_marginBottom="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <EditText
+                            android:id="@+id/et_voucher_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:textColor="#000"
+
+                            android:focusableInTouchMode="false"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/indi_slives">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_indigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Photobook"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radio_slive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Silver Halide"
+                            />
+                    </RadioGroup>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/cash_bank_upis">
+
+                        <RadioButton
+                            android:id="@+id/radio_cash_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="CASH" />
+
+                        <RadioButton
+                            android:id="@+id/radio_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="BANK/Paytm/UPI"
+                            />
+                    </RadioGroup>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Payment Date"
+                        android:layout_marginBottom="10dp">
+                        <EditText
+                            android:id="@+id/et_check_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="datetime"
+                            android:drawableRight="@drawable/calender"
+
+                            android:padding="10dp"
+                            android:clickable="false"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="false"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="BANK Name/PAYTM/CASH"
+                        android:layout_marginBottom="10dp">
+                        <EditText
+                            android:id="@+id/payment_amount_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CASH"
+
+                            android:enabled="false"
+
+
+                            android:padding="10dp"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Amount"
+                        android:layout_marginBottom="10dp">
+                        <EditText
+                            android:id="@+id/et_payment_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:padding="10dp"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Remark(Optional)"
+                        android:layout_marginBottom="10dp">
+
+                        <EditText
+                            android:id="@+id/et_payment_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:padding="10dp"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_payment_button"
+                        android:text="@string/SAVE"
+                        android:background="@drawable/save_button_decoration"
+                        android:textColor="@color/white"
+                        android:padding="15dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="10dp"/>
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wid_progressbar"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

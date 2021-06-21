@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/payment_mode_activity_back"
+                android:src="@drawable/back_arrow"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#fff"
+                android:textSize="21dp"
+                android:layout_weight="2.8"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_button_decoration"
+        android:id="@+id/payment_mode_activity_det_view"
+        android:text="BILL &amp; PAYMENT RECEIVED DETAIL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="80dp"
+
+        android:textColor="@color/white"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_button_decoration"
+
+        android:text="PAYMENT SEND DETAIL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/payment_mode_activity_details_wid"
+
+        android:layout_marginTop="20dp"
+
+        android:textColor="@color/white"
+
+        />
+
+</LinearLayout>

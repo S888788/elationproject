@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="white">#F5F1E9E9</color>
+
+    <color name="background">#F2E5E5</color>
+
+    <color name="party_cardview_bg">#f7f7f7</color>
+    <color name="party_cardview">#FA1B1B1C</color>
+    <color name="btn_bg">#121314</color>
+    <color name="themeColor">#000000</color>
+    <color name="textColor">#0D174D</color>
+    <color name="progressBg">#5A0D174D</color>
+    <color name="progessStroke">#800D174D</color>
+    <color name="whitee">#FFFFFF</color>
+    <color name="transWhitee">#98FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

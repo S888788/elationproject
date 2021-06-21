@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.PaymentFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <!-- Action Bar      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp">
+      <ImageView
+          android:id="@+id/deposite_back_pess"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/back_arrow" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="3.7"
+          android:text="Payment Details"
+          android:textColor="#fff"
+          android:textSize="20dp"
+          android:textStyle="bold"/>
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/refresh" />
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.1"
+          android:src="@drawable/more" />
+
+
+    </LinearLayout>
+    <!--       ToDate and Form date-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pn_et_formdate"
+            android:hint="Form Date"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/calender"
+            android:padding="10dp"
+            android:clickable="false"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pn_et_todate"
+            android:hint="To Date"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/calender"
+            android:padding="10dp"
+            android:clickable="false"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            />
+      </LinearLayout>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:id="@+id/pn_form_to_btn"
+          android:background="@color/btn_bg"
+          android:textColor="@color/whitee"
+          android:textStyle="bold"
+          android:textSize="15dp"
+
+          />
+    </LinearLayout>
+    <!--    Studio code and studio name and recyclerview   -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Transitaion"
+        android:background="@color/btn_bg"
+        android:textColor="@color/whitee"
+        android:id="@+id/pn_st_name"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frg_deposite_recy"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_frag"
+        android:visibility="gone"
+        />
+
+
+
+  </LinearLayout>
+
+</FrameLayout>

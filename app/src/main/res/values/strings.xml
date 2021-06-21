@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Surataccount</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SAVE">save</string>
+    <string name="adress">"Plot - 4/5"+" JK Bardolia Mill Compound  vasta devdi road  opposite hindu megvad colony  Near Surat Dawa Bazaar surat : 395004"</string>
+</resources>

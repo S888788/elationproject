@@ -1,0 +1,80 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/re_lay"
+        android:background="@color/colorPrimary">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/faq_main_recler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/re_lay"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textspecg_lay"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/re_lay"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/txt_lay_faq"
+            android:layout_weight="1"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/faq_liner_layout"
+            android:hint="Enter msg"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faq_edit_chat_token_ge_all"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_mic_24"
+            android:layout_weight="1"
+            android:id="@+id/faq_iv_mic_token_ge_all"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_btn_submit_token_ge_all"
+        android:layout_alignParentEnd="true"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textspecg_lay"
+        android:layout_marginBottom="30dp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

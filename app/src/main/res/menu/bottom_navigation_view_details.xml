@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/trasition_item"
+        android:icon="@drawable/transtion"
+        android:title="Ledger"
+        android:enabled="true"/>
+    <item android:id="@+id/payment_item"
+        android:icon="@drawable/pay"
+        android:title="Payment Details" />
+    <item android:id="@+id/billed_item"
+        android:icon="@drawable/billed"
+        android:title="Bill Details" />
+
+</menu>

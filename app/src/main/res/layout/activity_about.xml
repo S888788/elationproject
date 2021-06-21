@@ -1,0 +1,179 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--back liner layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_activity_back"
+                android:src="@drawable/back_arrow"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_weight="0.2"
+                android:textColor="#fff"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/slider"
+
+        android:background="@drawable/background_gradinted">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/slider_back"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#140202"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+           />
+    </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/about_recycler"
+          android:layout_margin="10dp"
+          />
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="5dp"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="--Address--"
+                  android:textStyle="bold"
+                  android:textAllCaps="true"
+                  android:textSize="18sp"
+                  android:textColor="#000000"
+                  android:textAlignment="center"
+                  android:layout_marginTop="5dp"
+                  />
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#000"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="3dp"
+                  android:layout_marginBottom="5dp"
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Plot- 4/5"
+                  android:inputType="textMultiLine"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#B3DDFF"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+
+
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="JK Bardolia Mill Compound"
+                  android:inputType="textMultiLine"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#B2ACAC"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="vasta devdi road"
+                  android:inputType="textMultiLine"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#B2ACAC"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="opposite hindu megvad colony"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#B2ACAC"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Near Surat Dawa Bazaar"
+                  android:inputType="textMultiLine"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#B2ACAC"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="surat : 395004"
+                  android:inputType="textMultiLine"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginBottom="20dp"
+                  android:textColor="#B2ACAC"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  />
+          </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+      </LinearLayout>
+  </ScrollView>
+
+
+</LinearLayout>
